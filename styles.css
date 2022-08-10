@@ -60,3 +60,8 @@ body{
 label {
     margin: 5px;
 }
+h1 {
+    margin: 15px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
