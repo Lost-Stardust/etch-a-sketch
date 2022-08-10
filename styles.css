@@ -44,3 +44,6 @@
     pointer-events: all;
     opacity: 1;
 }
+label {
+    margin: 5px;
+}
