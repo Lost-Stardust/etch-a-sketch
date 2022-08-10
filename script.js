@@ -24,6 +24,6 @@ console.log(gridItem);
 
 for (let i=0; i<gridItem.length; i++) {
     gridItem[i].addEventListener('mouseover', () => {
-        gridItem[i].style.backgroundColor = 'red';
+        gridItem[i].style.backgroundColor = 'black';
     })
 }
