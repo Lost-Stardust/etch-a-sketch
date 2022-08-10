@@ -3,7 +3,7 @@
 const body = document.querySelector('body')
 const container = document.getElementById('grid-container');
 const button = document.createElement('button');
-button.textContent = 'generate 16x16 grid';
+button.textContent = 'Change grid size';
 body.insertBefore(button, container);
 
 // button.addEventListener('click', () => {
