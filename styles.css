@@ -36,7 +36,8 @@ body{
     
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
+    flex-direction: column;
     
 }
 #modal.active{
@@ -80,4 +81,8 @@ button:hover {
     width: 200px;
     background-color: #FDFE62;    
     transition: 300ms ease-in-out;
+}
+label {
+    padding-bottom: 15px;
+    font-size: 20px;
 }
