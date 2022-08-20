@@ -83,6 +83,12 @@ label {
     margin: 5px;
 }
 label {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     font-size: 20px;
+}
+#closeModal {
+    padding: 8px;
+}
+input {
+    font-size: 17px;
 }
