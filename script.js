@@ -22,7 +22,6 @@ for (let i=0; i<256; i++) {
 
 // gridItem is an array type html collection
 const gridItem = document.getElementsByClassName('grid-item');
-console.log(gridItem);
 
 for (let i=0; i<gridItem.length; i++) {
     gridItem[i].addEventListener('mouseover', () => {
@@ -30,5 +29,10 @@ for (let i=0; i<gridItem.length; i++) {
     })
 }
 
-const input = document.querySelector('input')
-console.log(input)
+let closeModal = document.getElementById('closeModal');
+closeModal.addEventListener('click', () => {
+    const input = document.querySelector('input').value;
+    console.log(input);
+    overlay.classList.remove('active');
+    modal.classList.remove('active');
+});
