@@ -27,3 +27,6 @@ for (let i=0; i<gridItem.length; i++) {
         gridItem[i].style.backgroundColor = 'black';
     })
 }
+
+const input = document.querySelector('input')
+console.log(input)
