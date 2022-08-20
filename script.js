@@ -29,6 +29,8 @@ for (let i=0; i<gridItem.length; i++) {
     })
 }
 
+const input = document.querySelector('input').value;
+
 let closeModal = document.getElementById('closeModal');
 closeModal.addEventListener('click', () => {
     const input = document.querySelector('input').value;
