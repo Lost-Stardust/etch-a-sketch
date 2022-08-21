@@ -14,6 +14,18 @@ button.addEventListener('click', () => {
     modal.classList.add('active');
 })
 
+
+let closeModal = document.getElementById('closeModal');
+closeModal.addEventListener('click', () => {
+    let input = document.querySelector('input').value;
+    console.log(input);
+    let num = parseInt(input);
+    console.log(typeof num);
+    overlay.classList.remove('active');
+    modal.classList.remove('active');
+});
+
+
 for (let i=0; i<256; i++) {
     const div = document.createElement('div');
     div.classList.add('grid-item')
@@ -28,13 +40,3 @@ for (let i=0; i<gridItem.length; i++) {
         gridItem[i].style.backgroundColor = 'black';
     })
 }
-
-const input = document.querySelector('input').value;
-
-let closeModal = document.getElementById('closeModal');
-closeModal.addEventListener('click', () => {
-    const input = document.querySelector('input').value;
-    console.log(input);
-    overlay.classList.remove('active');
-    modal.classList.remove('active');
-});
