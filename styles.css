@@ -14,15 +14,16 @@ body{
 #grid-container {
     display: flex;
     height: auto;
-    width: 400px;
+    width: 450px;
     flex-flow: row wrap;
     gap: 0px;
 }
 .grid-item {
     border: black solid 1px;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     flex-grow: 1;
+    background-color: white;
 }
 h1 {
     margin: 15px;
