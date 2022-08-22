@@ -5,7 +5,7 @@ const modal = document.getElementById('modal');
 const body = document.querySelector('body');
 const container = document.getElementById('grid-container');
 const button = document.createElement('button');
-button.textContent = 'Change grid size';
+button.textContent = 'Generate grid';
 body.insertBefore(button, container);
 
 
@@ -54,6 +54,7 @@ closeModal.addEventListener('click', () => {
     console.log(container)
     overlay.classList.remove('active');
     modal.classList.remove('active');
+    button.textContent = 'Change size'
 });
 
 
