@@ -23,7 +23,7 @@ body{
     height: 25px;
     width: 25px;
     flex-grow: 1;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.89);
 }
 h1 {
     margin: 15px;
