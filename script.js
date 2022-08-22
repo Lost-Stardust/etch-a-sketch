@@ -21,16 +21,42 @@ closeModal.addEventListener('click', () => {
     console.log(input);
     let num = parseInt(input);
     console.log(typeof num);
+    let num2 = num*num;
+    console.log(num2)
+
+    let width = 550; 
+    let cell = width/input
+    console.log(cell)
+    
+
+    let children = document.querySelectorAll('.grid-item');
+    console.log(children)
+    children.forEach(child => container.removeChild(child))
+
+
+
+    const div = document.createElement('div');
+    for (let i=0; i<num2; i++) {
+        const div = document.createElement('div');
+        div.classList.add('grid-item')
+        container.appendChild(div);
+
+        div.style.height = `${cell}px`;
+        div.style.width = `${cell}px`; 
+    }
+
+    for (let i=0; i<gridItem.length; i++) {
+        gridItem[i].addEventListener('mouseover', () => {
+            gridItem[i].style.backgroundColor = 'black';
+        })
+    }
+
+    console.log(container)
     overlay.classList.remove('active');
     modal.classList.remove('active');
 });
 
 
-for (let i=0; i<256; i++) {
-    const div = document.createElement('div');
-    div.classList.add('grid-item')
-    container.appendChild(div);
-}
 
 // gridItem is an array type html collection
 const gridItem = document.getElementsByClassName('grid-item');
